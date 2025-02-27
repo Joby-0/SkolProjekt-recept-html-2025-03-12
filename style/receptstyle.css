@@ -1,11 +1,15 @@
 * {
     margin: 0;
 }
+body{
+    background-color: #FAFAF5;
+}
 
+/* nav bar start */
 .navbar {
     width: 80%;
     height: 60px;
-    background-color: white;
+   
     display: flex;
     align-items: center;
     justify-self: center;
@@ -35,32 +39,39 @@
 .navbarLog,
 .navbarReg {
     border-radius: 4px;
+    padding: 0.5rem;
 }
 
 .navbarLog {
-    background-color: rgb(0, 229, 0);
+    background-color: #FFD700;
 
 }
 
 .navbarReg {
-    background-color: gray;
+    background-color: #4A90E2;
 }
+
+/* Main start */
 
 .container {
     width: 80%;
     justify-self: center;
-
 }
 
 .receptGrid {
     display: grid;
     grid-template-columns: 48% 48%;
+    grid-auto-rows: auto; /* Ensures rows expand with content */
     column-gap: 4%;
     row-gap: 5%;
-    width: 100%;
     margin-top: 5%;
+    height: auto; /* Grid should grow as needed */
+    min-height: 1500px;
 }
 
+
+
+/* Bild start */
 .receptGridItem {
     width: 100%;
     height: 600px;
@@ -69,12 +80,10 @@
 .receptGridItem h1 {
     font-size: 3rem;
 }
-
 .receptimg {
     width: 100%;
     height: 90%;
 }
-
 .receptScreenGoDark {
     display: flex;
     justify-content: end;
@@ -82,7 +91,6 @@
     height: 10%;
     align-items: center;
 }
-
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -90,14 +98,12 @@
     width: 60px;
     height: 34px;
 }
-
 /* Hide default HTML checkbox */
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
-
 /* The slider */
 .slider {
     position: absolute;
@@ -137,7 +143,6 @@ input:checked+.slider:before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
-/* Rounded sliders */
 .slider.round {
     border-radius: 34px;
 }
@@ -146,7 +151,7 @@ input:checked+.slider:before {
 }
 
 
-
+/* info start */
 .receptInfo h1 {
     text-align: center;
     height: 10%;
@@ -183,9 +188,18 @@ input:checked+.slider:before {
     border: none;
     cursor: pointer;
 }
+
+/* Gör så här start */
 .doThis {
     min-height: 600px;
     height: fit-content;
+    grid-row: span 1;
+}
+.doThisHeader, .IngredienserHeader{
+    margin-bottom: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .doThisItem{
     width: 100%;
@@ -207,6 +221,27 @@ input:checked+.slider:before {
 .doThisItem h3{
     padding: 1%;
 }
+
+.IngredienserHeader button{
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.doThisinsp a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+/* Ingredienser start */
 .IngredienserItem{
     height: 8%;
     width: 100%;
@@ -220,4 +255,90 @@ input:checked+.slider:before {
     margin: 1rem;
     color: gray;
     font-weight: bold;
+}
+
+
+
+
+/* recentioner start */
+.recentioner{
+    width: 100%;
+    height: 500px;
+    background-color: green;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+.recentioner h1{
+    margin-bottom: 5%;
+}
+.review-container-grid{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+}
+.review-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.review-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    height: 150px;
+}
+
+.stars {
+    font-size: 18px;
+    color: gold;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+
+.date {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+.review-input-container{
+    height: 90%;
+    width: 90%;
+    background-color: #2196F3;
+}
+.review-input textarea {
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.review-input button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    font-weight: bold;
+    cursor: pointer;
 }
