@@ -3,11 +3,31 @@
 }
 body{
     background-color: #FAFAF5;
+    cursor: default;
 }
+h1,h2,h3,a{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;  /* Fet stil för bättre läsbarhet */
+    text-transform: uppercase; /* Gör texten mer tydlig */
+    letter-spacing: 1px; /* Ökar läsbarheten */
+    padding: 10px 20px; /* Ger knappen en bra storlek */
+    border-radius: 5px; /* Mjuka kanter */
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
 
 /* nav bar start */
 .navbar {
-    width: 80%;
+    width: 90%;
     height: 60px;
    
     display: flex;
@@ -46,6 +66,9 @@ body{
     background-color: #FFD700;
 
 }
+.navbarLog:hover{
+    background-color: #dab901;
+}
 
 .navbarReg {
     background-color: #4A90E2;
@@ -54,7 +77,7 @@ body{
 /* Main start */
 
 .container {
-    width: 80%;
+    width: 90%;
     justify-self: center;
 }
 
@@ -78,7 +101,7 @@ body{
 }
 
 .receptGridItem h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .receptimg {
     width: 100%;
@@ -158,7 +181,7 @@ input:checked+.slider:before {
 }
 .receptRating{
     display: flex;
-    align-items: top;
+    align-items: center;
     height: 10%;
 }
 .receptRating svg{
@@ -204,7 +227,7 @@ input:checked+.slider:before {
 .doThisItem{
     width: 100%;
     height: 10%;
-    margin-top: 5px;
+    margin-top: 1.5%;
     align-items: center;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -254,7 +277,7 @@ input:checked+.slider:before {
 .IngredienserItem span{
     margin: 1rem;
     color: gray;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 
@@ -263,8 +286,6 @@ input:checked+.slider:before {
 /* recentioner start */
 .recentioner{
     width: 100%;
-    height: 500px;
-    background-color: green;
     margin-top: 5%;
     margin-bottom: 5%;
     
@@ -280,6 +301,7 @@ input:checked+.slider:before {
 .review-container{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 .review-card {
@@ -312,13 +334,21 @@ input:checked+.slider:before {
     margin-top: 5px;
 }
 .review-input-container{
-    height: 90%;
-    width: 90%;
-    background-color: #2196F3;
+    border-radius: 12px;
+    justify-content: center;
+    height: 500px;
+    background-color: grey;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+}
+.review-input{
+    width: 45%;
+    height: 45%;
 }
 .review-input textarea {
     width: 90%;
-    height: 50px;
+    height: 70%;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 5px;
@@ -340,5 +370,43 @@ input:checked+.slider:before {
     justify-content: space-between;
     width: 200px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-container{
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    height: fit-content;
+}
+.footer-items{
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.footer-ions{
+    margin-top: 2%;
+}
+.footer-ions i{
+    padding: 1%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item{
+    width: 33%;
+}
+.footer-items h3{
+    margin-top: 1%;
+}
+.footer-item ul{
+    padding: 0;
+}
+.footer-item li{
+    list-style: none;
+    line-height: 200%;
     cursor: pointer;
 }
