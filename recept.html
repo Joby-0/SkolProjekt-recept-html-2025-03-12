@@ -17,15 +17,18 @@
         <div class="navbar">
             <div class="navbarLogoDiv">
                 <h1 class="navbarLogo">MatGlädje</h1>
+                <input type="search">
             </div>
             <div class="navbarItemsDiv">
                 <ul class="navbarItemsUl">
-                    <a class="navbarItem" href="">Home</a>
-                    <a class="navbarItem" href="">Recpt</a>
-                    <a class="navbarItem" href="">Favoriter</a>
-                    <button class="navbarItem navbarLog" href="">Logga in</button>
-                    <button class="navbarItem navbarReg" href="">Registera</button>
+                    <a class="navbarItem" href="#">Home</a>
+                    <a class="navbarItem" href="#">Recpt</a>
+                    <a class="navbarItem" href="#">Favoriter</a>
+                    <button class="navbarItem navbarLog" href="#">Logga in</button>
+                    <button class="navbarItem navbarReg" href="#">Registera</button>
                 </ul>
+                <i id="mobilehammenu" class="fa-solid fa-bars fa-xl"></i>
+
 
             </div>
         </div>
@@ -88,35 +91,35 @@
                         <h1>Gör så här</h1>
                         <div class="doThisinsp">
                             <p>Se mer inspiration av</p>
-                            <a href="">Bylander</a>
+                            <a href="#">Bylander</a>
                         </div>
 
                     </div>
                     <div class="doThisItem">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" >
                         <h3>Sätt ugnen på 225°C. </h3>
                     </div>
-                    <div class="doThisItem">
-                        <input type="checkbox" name="" id="">
+                    <div class="doThisItem"  >
+                        <input type="checkbox"  >
                         <h3>Skala och koka potatisen.</h3>
                     </div>
                     <div class="doThisItem">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" >
                         <h3>Blanda crème fraiche och sweet chilisås. Lägg fisken i en liten smord ugnssäker form och
                             salta och peppra. Bred crème fraichen över fisken och gratinera mitt i ugnen ca 10 minuter.
                         </h3>
                     </div>
                     <div class="doThisItem">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox">
                         <h3>Skala morötterna. Fortsätt skala långa remsor av morötterna och skär i salladen i bitar.
                             Blanda salladen och morötterna. Servera gärna med en vinägrett.</h3>
                     </div>
                     <div class="doThisItem">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox">
                         <h3>Krossa potatisen och blanda med mjölken. Smaka av med salt och peppar.</h3>
                     </div>
                     <div class="doThisItem">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox">
                         <h3>Servera laxen med mos och morotssallad.</h3>
                     </div>
 
@@ -124,10 +127,14 @@
                 <div class="receptGridItem">
                     <div class="IngredienserHeader">
                         <h1>Ingredienser</h1>
-                        <button>4 Portioner <svg xmlns="http://www.w3.org/2000/svg" height="1.5rem"
-                                viewBox="0 -960 960 960" width="1.5rem" fill="#00000">
-                                <path d="M320-200v-560l440 280-440 280Z" />
-                            </svg></button>
+                    
+                        <select >
+                            <option value="2">2 Portioner</option>
+                            <option selected value="4">4 Portioner</option>
+                            <option value="6">6 Portioner</option>
+                            <option value="8">8 Portioner</option>
+                            <option value="10">10 Portioner</option>
+                        </select>
                     </div>
 
 
@@ -160,6 +167,15 @@
                     </div>
                 </div>
             </div>
+            <div class="eatWith">
+                <h1>Tips</h1>
+                <h2>Recomenderad sås</h2>
+                <p>Remouladsås</p>
+                <h2>Recomenderad dryck</h2>
+                <p>Vin med hög fruktsyra. Ett rosévin går också bra. <a href="https://www.systembolaget.se/sortiment/vin/vitt-vin/friskt-fruktigt/fisk/">Här</a></p>
+                <p>Öl: Ljus lager eller ale med måttlig beska fungerar då bra. <a href="https://www.systembolaget.se/sortiment/ol/ljus-lager/fisk/">Här</a></p>
+                
+            </div>
             <div class="recentioner">
                 <h1>Senaste Recentioner</h1>
                 <div class="review-container-grid">
@@ -169,37 +185,36 @@
                     <div class="review-container">
                         <div class="review-card">
                             <div class="stars">★★★★★</div>
-                            <h3>Drömmigt God</h3>
-                            <p>I särklass det bästa receptet på mat</p>
+                            <h3>Perfekt!</h3>
+                            <p>Lätt att göra, supergott och mättande. Rekommenderas varmt!</p>
                             <div class="user-info">
-                                <span>Mustiga Mauri</span>
+                                <span>Bertil</span>
                             </div>
                             <span class="date">25-02-2025</span>
                         </div>
                         <div class="review-card">
                             <div class="stars">★★★★★</div>
-                            <h3>Drömmigt God</h3>
-                            <p>I särklass det bästa receptet på mat</p>
+                            <h3>Fantastisk smakupplevelse!</h3>
+                            <p>Jag testade detta recept på lax och potatismos igår, och det var en riktig succé! Laxen blev saftig och smakrik tack vare citronen och dillkryddningen. Potatismoset var krämigt och fluffigt, precis som det ska vara. Jag tillsatte en skvätt grädde och lite muskotnöt för extra smak. Kombinationen av den milda, lena potatisen och den perfekt tillagade laxen gjorde att hela familjen älskade rätten. Kommer definitivt laga detta igen!</p>
                             <div class="user-info">
-                                <span>Mustiga Mauri</span>
+                                <span>Bylander</span>
                             </div>
                             <span class="date">25-02-2025</span>
                         </div>
                         <div class="review-card">
                             <div class="stars">★★★★★</div>
-                            <h3>Drömmigt God</h3>
-                            <p>I särklass det bästa receptet på mat</p>
+                            <h3>Enkel och god vardagsrätt</h3>
+                            <p>Väldigt gott och lättlagat! Laxen blev fin och smakade härligt med citron och dill. Potatismoset var bra, men jag föredrar lite mer smör i mitt. Ett enkelt men smakrikt recept som jag absolut rekommenderar!</p>
                             <div class="user-info">
-                                <span>Mustiga Mauri</span>
+                                <span>Erik</span>
                             </div>
                             <span class="date">25-02-2025</span>
                         </div>
-                        
 
                     </div>
                     <div class="review-container review-input-container">
                         <div class="review-card review-input">
-                            <div class="stars">☆☆☆☆☆</div>
+                            <div class="stars"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
                             <textarea placeholder="Skriv..."></textarea>
                             <button>Skicka</button>
                         </div>
@@ -229,24 +244,24 @@
                 <div class="footer-item">
                     <h2>Infomation</h2>
                     <ul>
-                        <li><a href=""></a>Nyhetsbrev</li>
-                        <li><a href=""></a>Cookies</li>
-                        <li><a href=""></a>FAQ</li>
+                        <li><a href="#"></a>Nyhetsbrev</li>
+                        <li><a href="#"></a>Cookies</li>
+                        <li><a href="#"></a>FAQ</li>
                     </ul>
                 </div>
                 <div class="footer-item">
                     <h2>Innehåll</h2>
                     <ul>
-                        <li><a href=""></a>Recept</li>
-                        <li><a href=""></a>Artiklar</li>
-                        <li><a href=""></a>Inspiration</li>
+                        <li><a href="#"></a>Recept</li>
+                        <li><a href="#"></a>Artiklar</li>
+                        <li><a href="#"></a>Inspiration</li>
                     </ul>
                 </div>
                 <div class="footer-item">
                     <h2>Kundservice</h2>
                     <ul>
-                        <li><a href=""></a>Kontakta oss</li>
-                        <li><a href=""></a>Annonsera</li>
+                        <li><a href="#"></a>Kontakta oss</li>
+                        <li><a href="#"></a>Annonsera</li>
                     </ul>
                 </div>
             </div>
@@ -254,5 +269,4 @@
     </footer>
 
 </body>
-
 </html>

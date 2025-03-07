@@ -1,6 +1,11 @@
 * {
     margin: 0;
 }
+:root{
+    --buttonColor: #FFD700;
+    --buttonColorHover: #dab901;
+    --boxshaodw: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 body{
     background-color: #FAFAF5;
     cursor: default;
@@ -12,13 +17,13 @@ p{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-button {
+button, select {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;  /* Fet stil för bättre läsbarhet */
-    text-transform: uppercase; /* Gör texten mer tydlig */
-    letter-spacing: 1px; /* Ökar läsbarheten */
-    padding: 10px 20px; /* Ger knappen en bra storlek */
-    border-radius: 5px; /* Mjuka kanter */
+    font-weight: 700;  
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    padding: 10px 20px; 
+    border-radius: 4px;
     border: none;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -26,6 +31,10 @@ button {
 
 
 /* nav bar start */
+header{
+    background-color: black;
+    
+}
 .navbar {
     width: 90%;
     height: 60px;
@@ -33,7 +42,7 @@ button {
     display: flex;
     align-items: center;
     justify-self: center;
-    color: black;
+    color: white;
 }
 
 .navbarLogoDiv,
@@ -41,6 +50,18 @@ button {
     width: 50%;
     height: 50%;
     align-items: center;
+    display: flex;
+}
+.navbarLogoDiv{
+    justify-content: space-between;
+}
+.navbarLogoDiv input{
+    height: 100%;
+    width: 45%;
+    margin-right: 4%;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .navbarItemsDiv {
@@ -50,10 +71,20 @@ button {
 
 .navbarItem {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     padding: 5px;
 
+}
+.navbarItemsUl{
+    align-items: center;
+}
+#mobilehammenu{
+    display: none;
+}
+.navbarItemsUl input{
+    justify-self: start;
+    
 }
 
 .navbarLog,
@@ -63,15 +94,16 @@ button {
 }
 
 .navbarLog {
-    background-color: #FFD700;
+    background-color: var(--buttonColor);
 
 }
 .navbarLog:hover{
-    background-color: #dab901;
+    background-color: var(--buttonColorHover);
 }
 
 .navbarReg {
-    background-color: #4A90E2;
+    background-color: white;
+    color: black;
 }
 
 /* Main start */
@@ -154,11 +186,11 @@ button {
 }
 
 input:checked+.slider {
-    background-color: #2196F3;
+    background-color: var(--buttonColor);
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px var(--buttonColorHover);
 }
 
 input:checked+.slider:before {
@@ -177,7 +209,6 @@ input:checked+.slider:before {
 /* info start */
 .receptInfo h1 {
     text-align: center;
-    height: 10%;
 }
 .receptRating{
     display: flex;
@@ -202,7 +233,6 @@ input:checked+.slider:before {
     justify-content: space-between;
 }
 .receptExtraItem{
-    width: 10%;
     text-align: center;
     
 }
@@ -230,7 +260,7 @@ input:checked+.slider:before {
     margin-top: 1.5%;
     align-items: center;
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: var(--boxshaodw);
     border-radius: 4px;
 }
 .doThisItem input{
@@ -271,7 +301,7 @@ input:checked+.slider:before {
     margin-top: 4px;
     align-items: center;
     display: flex;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: var(--boxshaodw);
     border-radius: 4px;
 }
 .IngredienserItem span{
@@ -281,7 +311,12 @@ input:checked+.slider:before {
 }
 
 
-
+.eatWith{
+    border: black solid 1px;
+    padding: 2%;
+    border-radius: 8px;
+    width: 44%;
+}
 
 /* recentioner start */
 .recentioner{
@@ -301,17 +336,15 @@ input:checked+.slider:before {
 .review-container{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction:column;
+    gap: 5px;
 }
 .review-card {
     background: white;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    text-align: center;
-    height: 150px;
+    box-shadow:var(--boxshaodw);
+    
 }
 
 .stars {
@@ -322,7 +355,6 @@ input:checked+.slider:before {
 .user-info {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 8px;
     margin-top: 10px;
 }
@@ -336,9 +368,8 @@ input:checked+.slider:before {
 .review-input-container{
     border-radius: 12px;
     justify-content: center;
-    height: 500px;
-    background-color: grey;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #4A90E2;
+    box-shadow: var(--boxshaodw);
     align-items: center;
 
 }
@@ -355,7 +386,7 @@ input:checked+.slider:before {
 }
 
 .review-input button {
-    background: #28a745;
+    background: var(--buttonColor);
     color: white;
     border: none;
     padding: 5px 10px;
@@ -373,6 +404,12 @@ input:checked+.slider:before {
     cursor: pointer;
 }
 
+/* Footer start */
+
+footer{
+    background-color: black;
+    color: white;
+}
 .footer-container{
     width: 90%;
     display: flex;
@@ -410,3 +447,93 @@ input:checked+.slider:before {
     line-height: 200%;
     cursor: pointer;
 }
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) 
+{
+.review-input{
+    width: 80%;
+}
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px)
+{ 
+    .receptGrid{
+        display: block;
+    }
+    .navbarReg{
+        display: none;
+    }
+    .review-container-grid{
+        display:block;
+    }
+    .review-input-container{
+        height: 300px;
+        margin-top: 10px;
+    }
+    .review-input textarea{
+        height: 50%;
+
+    }
+    .eatWith{
+        width: 90%;
+        justify-self: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .IngredienserHeader{
+        display: block;
+    }
+    .footer-items{
+        width: 30%;
+    }
+    .footer-right{
+        width: 70%;
+    }
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) 
+{  
+    .footer-container{
+        width: 100%;
+        display: block;
+    }
+    .footer-items{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-right{
+        display: block;
+        
+    }
+    .footer-item{
+        width: 100%;
+    }
+    .receptGridItem{
+        margin-bottom: 10%;
+    }
+    .navbarItemsUl{
+        display: none;
+    }
+    .navbarLogoDiv input{
+        display: none;
+    }
+    #mobilehammenu{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
