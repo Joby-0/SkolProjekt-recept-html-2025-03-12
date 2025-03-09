@@ -374,8 +374,8 @@ input:checked+.slider:before {
 
 }
 .review-input{
-    width: 45%;
-    height: 45%;
+    width: 75%;
+    height: 55%;
 }
 .review-input textarea {
     width: 90%;
@@ -450,7 +450,7 @@ footer{
 
 
 
-/* // Large devices (desktops, 992px and up) */
+/* // Large devices (desktops, 992px and ner) */
 @media (max-width: 992px) 
 {
 .review-input{
@@ -458,7 +458,7 @@ footer{
 }
 }
 
-/* // Medium devices (tablets, 768px and up) */
+/* // Medium devices (tablets, 768px and ner) */
 @media (max-width: 768px)
 { 
     .receptGrid{
@@ -494,11 +494,15 @@ footer{
     .footer-right{
         width: 70%;
     }
+    .review-input-container{
+        background: none;
+        box-shadow: none;
+    }
 
 }
 
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and ner) */
 @media (max-width: 576px) 
 {  
     .footer-container{
